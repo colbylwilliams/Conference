@@ -111,6 +111,7 @@
   <ItemGroup>
     <AndroidAsset Include="Assets\AboutAssets.txt" />
   </ItemGroup>
+  <Import Project="..\Conference.Model\Conference.Model.projitems" Label="Shared" Condition="Exists('..\Conference.Model\Conference.Model.projitems')" />
   <Import Project="..\Conference.Shared\Conference.Shared.projitems" Label="Shared" Condition="Exists('..\Conference.Shared\Conference.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

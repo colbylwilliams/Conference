@@ -148,6 +148,7 @@
   <ItemGroup>
     <BundleResource Include="Settings.bundle\Root.plist" />
   </ItemGroup>
+  <Import Project="..\Conference.Model\Conference.Model.projitems" Label="Shared" Condition="Exists('..\Conference.Model\Conference.Model.projitems')" />
   <Import Project="..\Conference.Shared\Conference.Shared.projitems" Label="Shared" Condition="Exists('..\Conference.Shared\Conference.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

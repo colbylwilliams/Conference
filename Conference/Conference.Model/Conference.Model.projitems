@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{0FF0086D-1999-4500-81FA-1C83F2DA9B11}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Conference.Model</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)MyClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\BaseModelGuid.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\BaseModelString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\IModelGuid.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\IModelString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)People\Attendee.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)People\Person.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)People\Speaker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)People\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)People\Interfaces\IPerson.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)People\Interfaces\IPersonName.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)People\Interfaces\IUser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)People\Registrant.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Places\Building.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Places\Floor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Places\Space.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Places\Venue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\IDescription.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\IEmails.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\IName.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\IPhoto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\IPostalAddress.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ITitle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)People\Interfaces\IJobRole.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Organizations\Company.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Organizations\IOrganization.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\Session.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Events\Interfaces\IStartEnd.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Places\Interfaces\IPhysicalSpace.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\IModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Base\" />
+    <Folder Include="$(MSBuildThisFileDirectory)People\" />
+    <Folder Include="$(MSBuildThisFileDirectory)People\Interfaces\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Common\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Places\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Events\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Places\Interfaces\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Events\Interfaces\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Organizations\" />
+  </ItemGroup>
+</Project>
