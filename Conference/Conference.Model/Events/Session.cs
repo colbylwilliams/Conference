@@ -1,8 +1,8 @@
-﻿﻿using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Conference.Model
 {
-	public class Session
+	public class Session : ITitle, IDescription
 	{
 		public string Code { get; set; }
 

@@ -9,15 +9,9 @@
     <Import_RootNamespace>Conference.Model</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)MyClass.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Base\BaseModelGuid.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Base\BaseModelString.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Base\IModelGuid.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Base\IModelString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)People\Attendee.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)People\Person.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)People\Speaker.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)People\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)People\Interfaces\IPerson.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)People\Interfaces\IPersonName.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)People\Interfaces\IUser.cs" />
@@ -38,10 +32,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Events\Session.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Events\Interfaces\IStartEnd.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Places\Interfaces\IPhysicalSpace.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Base\IModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Organizations\Organization.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Places\Interfaces\ILocation.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Base\" />
     <Folder Include="$(MSBuildThisFileDirectory)People\" />
     <Folder Include="$(MSBuildThisFileDirectory)People\Interfaces\" />
     <Folder Include="$(MSBuildThisFileDirectory)Common\" />
