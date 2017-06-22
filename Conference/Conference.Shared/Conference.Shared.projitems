@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{8663ADF8-09FF-42D5-9A37-503017B72B8D}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Conference</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Bootstrap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Keys\Keys.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Settings\SettingAccessors.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Settings\SettingKeys.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\StringExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\TaskExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utilities\Log.cs" />
+  </ItemGroup>
+</Project>
